@@ -94,3 +94,4 @@ function bashsync() {
     alias kpx="(keepassx &> /dev/null &)"
     alias vbox="(virtualbox &> /dev/null &)"
     alias banshee="(banshee &> /dev/null &)"
+    alias rmk="(remarkable &> /dev/null &)"
