@@ -123,3 +123,6 @@ PS1="\[\033[0;32m\]\$(date +%H:%M) \h:\w \[\033[0;31m\]\$(parse_git_branch)\[\e[
 
 #paths
 export PATH=$PATH:/home/lucius/packer
+
+export NVM_DIR="/home/lucius/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
