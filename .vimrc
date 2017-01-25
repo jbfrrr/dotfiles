@@ -103,6 +103,8 @@ set noswapfile
 "--NERDTree
 nnoremap <silent> <F3> :NERDTreeToggle<CR>
 nnoremap <leader>n :NERDTreeToggle<CR>
+" show hidden files in NERDTree
+let NERDTreeShowHidden=1
 
 "--CtrlP
 "let g:ctrlp_clear_cache_on_exit     = 0
