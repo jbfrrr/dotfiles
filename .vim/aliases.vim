@@ -10,7 +10,7 @@ nmap <leader>w :w<CR>
 nmap <leader>q :q!<CR>
 nmap <leader>wq :wq<CR>
 
-" Easier moving in tabs and windows
+" easier moving in tabs and windows
 map <C-J> <C-W>j<C-W>_
 map <C-K> <C-W>k<C-W>_
 map <C-L> <C-W>l<C-W>_

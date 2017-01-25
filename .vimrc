@@ -106,16 +106,6 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 " show hidden files in NERDTree
 let NERDTreeShowHidden=1
 
-"--CtrlP
-"let g:ctrlp_clear_cache_on_exit     = 0
-"let g:ctrlp_map                     = '<c-p>'
-"let g:ctrlp_regexp                  = 1
-"let g:ctrlp_match_window_bottom     = 1
-"let g:ctrlp_open_new_file           = 't'
-"let g:ctrlp_open_multiple_files     = 'tjr'
-"let g:ctrlp_lazy_update             = 1
-"let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
-
 "--Airline
 set laststatus=2
 let g:airline_theme='bubblegum'
