@@ -20,3 +20,6 @@ nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 nnoremap <C-t> :tabnew<Space>
 nnoremap <C-t> <Esc>:tabnew<Space>
+
+" space toggles folds
+nnoremap <space> za

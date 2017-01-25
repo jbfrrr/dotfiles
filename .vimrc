@@ -19,6 +19,13 @@ set scrolloff=3
 " Always show at least 5 characters when scrolling horizontally
 set sidescrolloff=5
 
+" Folding
+" newly opened files are not yet folded
+set nofoldenable
+" default to folding based on indentation
+set foldmethod=indent
+set foldnestmax=10
+
 "--RESOURCES--
 
 " Remember 1K lines of history
