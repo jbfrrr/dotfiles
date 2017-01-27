@@ -19,6 +19,8 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'mileszs/ack.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'ntpeters/vim-better-whitespace'
+Plugin 'tpope/vim-sleuth'
 
 call vundle#end()
 filetype plugin indent on

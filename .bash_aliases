@@ -84,7 +84,7 @@ function bashsync() {
     alias alsamixer="(echo -ne \"\033]0;$HOSTNAME-alsamixer\007\"; alsamixer)"
 
     #system
-    
+
     #programs
     alias explorer="(nautilus --no-desktop --browser &> /dev/null &)"
     alias chrome="(google-chrome &> /dev/null &)"
