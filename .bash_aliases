@@ -83,6 +83,9 @@ function bashsync() {
     alias lhtop="(echo -ne \"\033]0;$HOSTNAME-htop\007\"; htop)"
     alias alsamixer="(echo -ne \"\033]0;$HOSTNAME-alsamixer\007\"; alsamixer)"
 
+    #tmux
+    alias tnux="tmux -2 new -s"
+
     #system
 
     #programs
