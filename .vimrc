@@ -80,6 +80,9 @@ set smarttab
 filetype indent on
 set autoindent
 set smartindent
+" turn off typescript indent
+let g:typescript_indent_disable = 1
+
 " Wrap lines
 set wrap
 
