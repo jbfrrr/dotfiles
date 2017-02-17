@@ -1,6 +1,6 @@
 #Variables
 
-DIR=~/.dotfiles;
+if [ -d ~/.dotfiles/ ]; then DIR=~/.dotfiles; else DIR=~/dotfiles; fi
 OLD_DIR=~/.dotfiles_bak;
 FILES=".bashrc .bash_aliases .vimrc .vim";
 
