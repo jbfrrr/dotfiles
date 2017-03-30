@@ -75,6 +75,11 @@ function bashsync() {
     rsync ~/.dotfiles/.bashrc $1:~/ -auvz;
     rsync ~/.dotfiles/.bash_aliases $1:~/ -auvz;
 }
+
+up() {
+    cd `for i in $(seq 1 ${1:-1}); do printf "%s" "../"; done`
+}
+
 #custom  aliases
     #basic
     alias lock="gnome-screensaver-command -l"
