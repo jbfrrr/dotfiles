@@ -12,8 +12,13 @@ For now complete installation can be done by following these steps:
 
 **Part 1: Resolve Initial Dependencies**
 
+#### `vim`
 1. Upgrade your vim to the latest version (here's [how to upgrade to vim 8.0](http://tipsonubuntu.com/2016/09/13/vim-8-0-released-install-ubuntu-16-04/))
 2. Install `vim-nox` and `vim-nox-py2` by doing `sudo apt-get install vim-nox && sudo apt-get install vim-nox-py2`
+
+#### `zsh`
+1. Install `zsh` via `apt`: `sudo apt-get install zsh`
+2. Finish installation via `curl` or `wget` as specified [here](https://github.com/robbyrussell/oh-my-zsh)
 
 **Part 2: Install `dotfiles`**
 
