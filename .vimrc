@@ -11,6 +11,9 @@ set backspace=indent,eol,start
 set encoding=utf8
 set ffs=unix,dos,mac
 
+" Shell compatibility
+set shell=bash\ -i
+
 " Set to auto read when a file is changed from the outside
 set autoread
 
