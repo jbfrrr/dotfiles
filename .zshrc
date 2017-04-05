@@ -84,4 +84,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+
+# NVM
+export NVM_DIR="/home/lucius/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Robots
+export PATH="${PATH}:~/usr/local/bin/chromedriver" # Robotframework
+
 source ~/.bash_aliases
