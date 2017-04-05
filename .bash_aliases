@@ -15,68 +15,15 @@ function ting() {
     ping $1;
 }
 
-function xid() {
-    if [[ "$#" -ne 1 || $1 != 'on' && $1 != 'off' ]]; then
-        echo 'xid needs (on/off) arg!';
-        return -1;
-    fi
-    if [ $1 == 'on' ]; then
-        mode=1;
-    else
-        mode=0;
-    fi
-    xinput;
-    read -p 'enter id#: ' id;
-    xinput set-prop $id "Device Enabled" $mode;
+function xinoff() {
+    xinput set-prop $1 "Device Enabled" 0;
 }
 
-function vmstart() {
-    if [[ "$#" -ne 1 || $1 != 'gui' && $1 != 'headless' && $1 != 'sdl' ]]; then
-        echo 'vmstart needs --type arg!';
-        return -1;
-    fi
-    VBoxManage list vms;
-    read -p 'enter vmname: ' vmname;
-    if [ -z "$vmname" ]; then
-        echo 'vmstart needs a specific vm!';
-        return -1;
-    fi
-    VBoxManage startvm $vmname --type $1;
+function xinon() {
+    xinput set-prop $1 "Device Enabled" 1;
 }
 
-function vmcontrol() {
-    if [[ "$#" -ne 1 || $1 != 'poweroff' && $1 != 'reset' && $1 != 'resume' && $1 != 'pause' && $1 != 'savestate' ]]; then
-        echo 'vmcontrol needs control action!';
-        return -1;
-    fi
-    VBoxManage list runningvms;
-    read -p 'enter running vmname: ' vmname;
-    if [ -z "$vmname" ]; then
-        echo 'vmcontrol needs a specific running vm!';
-        return -1;
-    fi
-    VBoxManage controlvm $vmname $1;
-}
-
-function vimsync() {
-    if [ "$#" -ne 1 ]; then
-        echo 'vimsync needs complete remote';
-        return -1;
-    fi
-    rsync ~/.dotfiles/.vimrc $1:~/ -auvz;
-    rsync ~/.dotfiles/.vim/ $1:~/.vim/ -auvz;
-}
-
-function bashsync() {
-    if [ "$#" -ne 1 ]; then
-        echo 'bashsync needs complete remote';
-        return -1;
-    fi
-    rsync ~/.dotfiles/.bashrc $1:~/ -auvz;
-    rsync ~/.dotfiles/.bash_aliases $1:~/ -auvz;
-}
-
-up() {
+function up() {
     cd `for i in $(seq 1 ${1:-1}); do printf "%s" "../"; done`
 }
 
