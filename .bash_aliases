@@ -50,3 +50,4 @@ function up() {
     alias vbox="(virtualbox &> /dev/null &)"
     alias banshee="(banshee &> /dev/null &)"
     alias rmk="(remarkable &> /dev/null &)"
+    alias spotify="(spotify &> /dev/null &)"
