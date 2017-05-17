@@ -51,3 +51,4 @@ function up() {
     alias banshee="(banshee &> /dev/null &)"
     alias rmk="(remarkable &> /dev/null &)"
     alias spotify="(spotify &> /dev/null &)"
+    alias gedit="(gedit &> /dev/null &)"
