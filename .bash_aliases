@@ -52,3 +52,4 @@ function up() {
     alias rmk="(remarkable &> /dev/null &)"
     alias spotify="(spotify &> /dev/null &)"
     alias gedit="(gedit &> /dev/null &)"
+    alias vlc="(vlc &> /dev/null &)"
