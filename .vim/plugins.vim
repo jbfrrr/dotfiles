@@ -22,7 +22,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'tpope/vim-sleuth'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'suan/vim-instant-markdown'
+"Plugin 'suan/vim-instant-markdown'
+Plugin 'shime/vim-livedown'
 
 call vundle#end()
 filetype plugin indent on
