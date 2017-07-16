@@ -93,3 +93,5 @@ export NVM_DIR="/home/lucius/.nvm"
 export PATH="${PATH}:~/usr/local/bin/chromedriver" # Robotframework
 
 source ~/.bash_aliases
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
