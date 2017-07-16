@@ -152,3 +152,6 @@ endif
 
 "--Markdown Preview
 filetype plugin on
+
+"--YCM
+let g:loaded_youcompleteme = 1
