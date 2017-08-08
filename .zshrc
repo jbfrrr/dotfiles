@@ -86,11 +86,15 @@ source $ZSH/oh-my-zsh.sh
 #
 
 # NVM
-export NVM_DIR="/home/lucius/.nvm"
+export NVM_DIR="~/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Robots
 export PATH="${PATH}:~/usr/local/bin/chromedriver" # Robotframework
+
+# stdlibc
+export LD_LIBRARY_PATH=~/gcc-5.2.0/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=~/gcc-5.2.0/lib64:$LD_LIBRARY_PATH
 
 source ~/.bash_aliases
 
